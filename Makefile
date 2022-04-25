@@ -476,10 +476,10 @@ DIST_COMMON = $(srcdir)/libhashkit-1.0/include.am \
 #	libmemcached/csl/parser.cc \
 #	libmemcached/csl/scanner.h \
 #	libmemcached/csl/scanner.cc
-##am__append_11 = -pthread
-##am__append_12 = -pthread
-##am__append_13 =  \
-##	 $(am__empty)
+#am__append_11 = -pthread
+#am__append_12 = -pthread
+#am__append_13 =  \
+#	-lsasl2 $(am__empty)
 ##am__append_14 = libmemcached/dtrace_probes.h
 ##am__append_15 = libmemcached/dtrace_probes.h \
 ##	libmemcached/libmemcached_probes.o
@@ -833,10 +833,10 @@ am__append_52 = libmemcached/csl/parser.h \
 	libmemcached/csl/parser.cc \
 	libmemcached/csl/scanner.h \
 	libmemcached/csl/scanner.cc
-#am__append_53 = -pthread
-#am__append_54 = -pthread
-#am__append_55 =  \
-#	 $(am__empty)
+am__append_53 = -pthread
+am__append_54 = -pthread
+am__append_55 =  \
+	-lsasl2 $(am__empty)
 #am__append_56 = libmemcached/dtrace_probes.h
 #am__append_57 = libmemcached/dtrace_probes.h \
 #	libmemcached/libmemcached_probes.o
@@ -2880,29 +2880,29 @@ distuninstallcheck_listfiles = find . -type f -print
 am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \
   | sed 's|^\./|$(prefix)/|' | grep -v '$(infodir)/dir$$'
 distcleancheck_listfiles = find . -type f -print
-ACLOCAL = ${SHELL} /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18/build-aux/missing aclocal-1.13
+ACLOCAL = ${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing aclocal
 ALLOCA = 
 AMINCLUDE = aminclude.am
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = ar
-AUTOCONF = ${SHELL} /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18/build-aux/missing autoheader
+AUTOCONF = ${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing autoheader
 AUTOHEADER_FILE = mem_config.h
-AUTOMAKE = ${SHELL} /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18/build-aux/missing automake-1.13
+AUTOMAKE = ${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing automake-1.13
 AWK = mawk
 CC = cc
 CCDEPMODE = depmode=gcc3
 CC_VERSION = cc (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 CC_VERSION_VENDOR = gnu
-CFLAGS = -g -O2  -Wno-unknown-pragmas -Wno-pragmas -Wall -Wextra -Wunsuffixed-float-constants -Wjump-misses-init -Wno-attributes -Waddress -Wvarargs -Warray-bounds -Wbad-function-cast -Wchar-subscripts -Wcomment -Wfloat-equal -Wformat-security -Wformat=2 -Wformat-y2k -Wlogical-op -Wmaybe-uninitialized -Wmissing-field-initializers -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wnormalized=id -Woverride-init -Wpointer-arith -Wpointer-sign -Wredundant-decls -Wshadow -Wsign-compare -Wstrict-overflow=1 -Wswitch-enum -Wtrampolines -Wundef -Wunsafe-loop-optimizations -funsafe-loop-optimizations -Wclobbered -Wunused -Wunused-result -Wunused-variable -Wunused-parameter -Wunused-local-typedefs -Wwrite-strings -fwrapv -pipe -fPIE -pie -Wsizeof-pointer-memaccess -Wpacked
+CFLAGS = -g -O2  -Wpragmas -Wunknown-pragmas -Wall -Wextra -Wunsuffixed-float-constants -Wjump-misses-init -Wno-attributes -Waddress -Wvarargs -Warray-bounds -Wbad-function-cast -Wchar-subscripts -Wcomment -Wfloat-equal -Wformat-security -Wformat=2 -Wformat-y2k -Wlogical-op -Wmaybe-uninitialized -Wmissing-field-initializers -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wnormalized=id -Woverride-init -Wpointer-arith -Wpointer-sign -Wredundant-decls -Wshadow -Wsign-compare -Wstrict-overflow=1 -Wswitch-enum -Wtrampolines -Wundef -Wunsafe-loop-optimizations -funsafe-loop-optimizations -Wclobbered -Wunused -Wunused-result -Wunused-variable -Wunused-parameter -Wunused-local-typedefs -Wwrite-strings -fwrapv -pipe -fPIE -pie -Wsizeof-pointer-memaccess -Wpacked -Werror
 CFLAG_VISIBILITY = -fvisibility=hidden
 CPP = cc -E
 CPPFLAGS =  -fvisibility=hidden
 CXX = c++ -std=c++0x
 CXXCPP = c++ -E
 CXXDEPMODE = depmode=gcc3
-CXXFLAGS = -g -O2 -Wno-unknown-pragmas -Wno-pragmas -Wall -Wextra -Wno-attributes -Wvarargs -Waddress -Warray-bounds -Wchar-subscripts -Wcomment -Wctor-dtor-privacy -Wfloat-equal -Wformat=2 -Wformat-y2k -Wmaybe-uninitialized -Wmissing-field-initializers -Wlogical-op -Wnon-virtual-dtor -Wnormalized=id -Woverloaded-virtual -Wpointer-arith -Wredundant-decls -Wshadow -Wsign-compare -Wstrict-overflow=1 -Wswitch-enum -Wtrampolines -Wundef -Wunsafe-loop-optimizations -funsafe-loop-optimizations -Wc++11-compat -Wclobbered -Wunused -Wunused-result -Wunused-variable -Wunused-parameter -Wunused-local-typedefs -Wwrite-strings -Wformat-security -fwrapv -pipe -fPIE -pie -Wsizeof-pointer-memaccess -Wpacked
+CXXFLAGS = -g -O2 -Wpragmas -Wunknown-pragmas -Wall -Wextra -Wno-attributes -Wvarargs -Waddress -Warray-bounds -Wchar-subscripts -Wcomment -Wctor-dtor-privacy -Wfloat-equal -Wformat=2 -Wformat-y2k -Wmaybe-uninitialized -Wmissing-field-initializers -Wlogical-op -Wnon-virtual-dtor -Wnormalized=id -Woverloaded-virtual -Wpointer-arith -Wredundant-decls -Wshadow -Wsign-compare -Wstrict-overflow=1 -Wswitch-enum -Wtrampolines -Wundef -Wunsafe-loop-optimizations -funsafe-loop-optimizations -Wc++11-compat -Wclobbered -Wunused -Wunused-result -Wunused-variable -Wunused-parameter -Wunused-local-typedefs -Wwrite-strings -Wformat-security -fwrapv -pipe -fPIE -pie -Wsizeof-pointer-memaccess -Wpacked -Werror
 CXX_VERSION = c++ (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0
 CXX_VERSION_VENDOR = gnu
 CYGPATH_W = echo
@@ -2934,7 +2934,7 @@ INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
 LCOV = 
 LCOV_GENHTML = 
 LD = /usr/bin/ld -m elf_x86_64
-LDFLAGS = 
+LDFLAGS =  -Werror -rdynamic
 LEX = :
 LIBEVENT_LIB = 
 LIBGEARMAN_CPPFLAGS = 
@@ -2944,7 +2944,7 @@ LIBHASHKIT_VERSION_STRING = 1.0.0
 LIBM = -lm
 LIBMEMCACHED_VERSION_HEX = 0x01000018
 LIBMEMCACHED_VERSION_STRING = 1.0.18
-LIBMEMCACHED_WITH_SASL_SUPPORT = #define LIBMEMCACHED_WITH_SASL_SUPPORT 0
+LIBMEMCACHED_WITH_SASL_SUPPORT = #define LIBMEMCACHED_WITH_SASL_SUPPORT 1
 LIBOBJS = 
 LIBS = 
 LIBSASL_CPPFLAGS = 
@@ -2955,7 +2955,7 @@ LIBUUID_LIB = -luuid
 LIPO = 
 LN_S = ln -s
 LTLIBOBJS = 
-MAKEINFO = ${SHELL} /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing makeinfo
 MANIFEST_TOOL = :
 MCHECK = 
 MCHECK_CPPFLAGS = 
@@ -2995,7 +2995,7 @@ RPMBUILD =
 RPMDEV_SETUPTREE = 
 RPM_RELEASE = 1
 RT_LIB = -lrt
-SASL_LIB = 
+SASL_LIB = -lsasl2
 SED = /usr/bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
@@ -3005,10 +3005,10 @@ VALGRIND =
 VERSION = 1.0.18
 WINE = 
 YACC = bison --warnings=all
-abs_builddir = /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18
-abs_srcdir = /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18
-abs_top_builddir = /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18
-abs_top_srcdir = /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18
+abs_builddir = /home/alexandre-bugeia/Documents/libmemcached
+abs_srcdir = /home/alexandre-bugeia/Documents/libmemcached
+abs_top_builddir = /home/alexandre-bugeia/Documents/libmemcached
+abs_top_srcdir = /home/alexandre-bugeia/Documents/libmemcached
 ac_ct_AR = ar
 ac_ct_CC = cc
 ac_ct_CXX = c++
@@ -3039,7 +3039,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18/build-aux/install-sh
+install_sh = ${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale

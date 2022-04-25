@@ -181,7 +181,7 @@
 #define HAVE_LIBPQ 0
 
 /* Define to 1 if LIBSASL is found */
-/* #undef HAVE_LIBSASL */
+#define HAVE_LIBSASL 1
 
 /* Define to 1 if you have the <limits.h> header file. */
 #define HAVE_LIMITS_H 1
@@ -447,7 +447,7 @@
 #define MYSQLD_BINARY "/usr/sbin/mysqld"
 
 /* Define to 1 to disable assert'ing code. */
-#define NDEBUG 1
+/* #undef NDEBUG */
 
 /* Name of package */
 #define PACKAGE "libmemcached"
@@ -514,10 +514,10 @@
 
 
 /* Define if the code was built from VCS. */
-#define VCS_CHECKOUT 0
+#define VCS_CHECKOUT 1
 
 /* VCS system */
-#define VCS_SYSTEM "none"
+#define VCS_SYSTEM "git"
 
 /* Version number of package */
 #define VERSION "1.0.18"

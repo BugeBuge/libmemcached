@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18'
+ac_pwd='/home/alexandre-bugeia/Documents/libmemcached'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/usr/bin/mkdir -p'
@@ -599,7 +599,7 @@ old_postuninstall_cmds=''
 old_archive_cmds='$AR $AR_FLAGS $oldlib$oldobjs~$RANLIB $tool_oldlib'
 lock_old_archive_extraction='no'
 CC='cc'
-CFLAGS='-g -O2  -Wno-unknown-pragmas -Wno-pragmas -Wall -Wextra -Wunsuffixed-float-constants -Wjump-misses-init -Wno-attributes -Waddress -Wvarargs -Warray-bounds -Wbad-function-cast -Wchar-subscripts -Wcomment -Wfloat-equal -Wformat-security -Wformat=2 -Wformat-y2k -Wlogical-op -Wmaybe-uninitialized -Wmissing-field-initializers -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wnormalized=id -Woverride-init -Wpointer-arith -Wpointer-sign -Wredundant-decls -Wshadow -Wsign-compare -Wstrict-overflow=1 -Wswitch-enum -Wtrampolines -Wundef -Wunsafe-loop-optimizations -funsafe-loop-optimizations -Wclobbered -Wunused -Wunused-result -Wunused-variable -Wunused-parameter -Wunused-local-typedefs -Wwrite-strings -fwrapv -pipe -fPIE -pie -Wsizeof-pointer-memaccess -Wpacked'
+CFLAGS='-g -O2  -Wpragmas -Wunknown-pragmas -Wall -Wextra -Wunsuffixed-float-constants -Wjump-misses-init -Wno-attributes -Waddress -Wvarargs -Warray-bounds -Wbad-function-cast -Wchar-subscripts -Wcomment -Wfloat-equal -Wformat-security -Wformat=2 -Wformat-y2k -Wlogical-op -Wmaybe-uninitialized -Wmissing-field-initializers -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wnormalized=id -Woverride-init -Wpointer-arith -Wpointer-sign -Wredundant-decls -Wshadow -Wsign-compare -Wstrict-overflow=1 -Wswitch-enum -Wtrampolines -Wundef -Wunsafe-loop-optimizations -funsafe-loop-optimizations -Wclobbered -Wunused -Wunused-result -Wunused-variable -Wunused-parameter -Wunused-local-typedefs -Wwrite-strings -fwrapv -pipe -fPIE -pie -Wsizeof-pointer-memaccess -Wpacked -Werror'
 compiler='c++'
 GCC='yes'
 lt_cv_sys_global_symbol_pipe='sed -n -e '\''s/^.*[	 ]\([ABCDGIRSTW][ABCDGIRSTW]*\)[	 ][	 ]*\([_A-Za-z][_A-Za-z0-9]*\)$/\1 \2 \2/p'\'' | sed '\''/ __gnu_lto/d'\'''
@@ -894,10 +894,10 @@ S["DTRACEFLAGS"]=""
 S["DTRACE"]=""
 S["SHARED_ENABLED_FALSE"]="#"
 S["SHARED_ENABLED_TRUE"]=""
-S["LIBMEMCACHED_WITH_SASL_SUPPORT"]="#define LIBMEMCACHED_WITH_SASL_SUPPORT 0"
-S["HAVE_SASL_FALSE"]=""
-S["HAVE_SASL_TRUE"]="#"
-S["SASL_LIB"]=""
+S["LIBMEMCACHED_WITH_SASL_SUPPORT"]="#define LIBMEMCACHED_WITH_SASL_SUPPORT 1"
+S["HAVE_SASL_FALSE"]="#"
+S["HAVE_SASL_TRUE"]=""
+S["SASL_LIB"]="-lsasl2"
 S["LIBSASL_LDFLAGS"]=""
 S["LIBSASL_CPPFLAGS"]=""
 S["PTHREAD_CFLAGS"]="-pthread"
@@ -971,8 +971,8 @@ S["HOST_OSX_FALSE"]=""
 S["HOST_OSX_TRUE"]="#"
 S["BUILD_WIN32_FALSE"]=""
 S["BUILD_WIN32_TRUE"]="#"
-S["IS_VCS_CHECKOUT_FALSE"]=""
-S["IS_VCS_CHECKOUT_TRUE"]="#"
+S["IS_VCS_CHECKOUT_FALSE"]="#"
+S["IS_VCS_CHECKOUT_TRUE"]=""
 S["DEBUG_FALSE"]=""
 S["DEBUG_TRUE"]="#"
 S["MCHECK"]=""
@@ -1039,12 +1039,12 @@ S["mkdir_p"]="$(MKDIR_P)"
 S["MKDIR_P"]="/usr/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]="strip"
-S["install_sh"]="${SHELL} /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18/build-aux/install-sh"
-S["MAKEINFO"]="${SHELL} /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18/build-aux/missing makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18/build-aux/missing autoheader"
-S["AUTOMAKE"]="${SHELL} /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18/build-aux/missing automake-1.13"
-S["AUTOCONF"]="${SHELL} /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18/build-aux/missing autoconf"
-S["ACLOCAL"]="${SHELL} /home/alexandre-bugeia/Téléchargements/Itss/libmemcached-1.0.18/build-aux/missing aclocal-1.13"
+S["install_sh"]="${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/install-sh"
+S["MAKEINFO"]="${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing autoheader"
+S["AUTOMAKE"]="${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing automake-1.13"
+S["AUTOCONF"]="${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing autoconf"
+S["ACLOCAL"]="${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing aclocal"
 S["VERSION"]="1.0.18"
 S["PACKAGE"]="libmemcached"
 S["CYGPATH_W"]="echo"
@@ -1064,23 +1064,23 @@ S["build_vendor"]="unknown"
 S["build_cpu"]="x86_64"
 S["build"]="x86_64-unknown-linux-gnu"
 S["ac_ct_CXX"]="c++"
-S["CXXFLAGS"]="-g -O2 -Wno-unknown-pragmas -Wno-pragmas -Wall -Wextra -Wno-attributes -Wvarargs -Waddress -Warray-bounds -Wchar-subscripts -Wcomment -Wctor-dtor-pr"\
-"ivacy -Wfloat-equal -Wformat=2 -Wformat-y2k -Wmaybe-uninitialized -Wmissing-field-initializers -Wlogical-op -Wnon-virtual-dtor -Wnormalized=id -Wove"\
-"rloaded-virtual -Wpointer-arith -Wredundant-decls -Wshadow -Wsign-compare -Wstrict-overflow=1 -Wswitch-enum -Wtrampolines -Wundef -Wunsafe-loop-opti"\
-"mizations -funsafe-loop-optimizations -Wc++11-compat -Wclobbered -Wunused -Wunused-result -Wunused-variable -Wunused-parameter -Wunused-local-typede"\
-"fs -Wwrite-strings -Wformat-security -fwrapv -pipe -fPIE -pie -Wsizeof-pointer-memaccess -Wpacked"
+S["CXXFLAGS"]="-g -O2 -Wpragmas -Wunknown-pragmas -Wall -Wextra -Wno-attributes -Wvarargs -Waddress -Warray-bounds -Wchar-subscripts -Wcomment -Wctor-dtor-privacy "\
+"-Wfloat-equal -Wformat=2 -Wformat-y2k -Wmaybe-uninitialized -Wmissing-field-initializers -Wlogical-op -Wnon-virtual-dtor -Wnormalized=id -Woverloade"\
+"d-virtual -Wpointer-arith -Wredundant-decls -Wshadow -Wsign-compare -Wstrict-overflow=1 -Wswitch-enum -Wtrampolines -Wundef -Wunsafe-loop-optimizati"\
+"ons -funsafe-loop-optimizations -Wc++11-compat -Wclobbered -Wunused -Wunused-result -Wunused-variable -Wunused-parameter -Wunused-local-typedefs -Ww"\
+"rite-strings -Wformat-security -fwrapv -pipe -fPIE -pie -Wsizeof-pointer-memaccess -Wpacked -Werror"
 S["CXX"]="c++ -std=c++0x"
 S["OBJEXT"]="o"
 S["EXEEXT"]=""
 S["ac_ct_CC"]="cc"
 S["CPPFLAGS"]=" -fvisibility=hidden"
-S["LDFLAGS"]=""
-S["CFLAGS"]="-g -O2  -Wno-unknown-pragmas -Wno-pragmas -Wall -Wextra -Wunsuffixed-float-constants -Wjump-misses-init -Wno-attributes -Waddress -Wvarargs -Warray-"\
-"bounds -Wbad-function-cast -Wchar-subscripts -Wcomment -Wfloat-equal -Wformat-security -Wformat=2 -Wformat-y2k -Wlogical-op -Wmaybe-uninitialized -W"\
-"missing-field-initializers -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wnormalized=id -Woverride-init -Wpointer-arith -Wpointer-sign -"\
-"Wredundant-decls -Wshadow -Wsign-compare -Wstrict-overflow=1 -Wswitch-enum -Wtrampolines -Wundef -Wunsafe-loop-optimizations -funsafe-loop-optimizat"\
-"ions -Wclobbered -Wunused -Wunused-result -Wunused-variable -Wunused-parameter -Wunused-local-typedefs -Wwrite-strings -fwrapv -pipe -fPIE -pie -Wsi"\
-"zeof-pointer-memaccess -Wpacked"
+S["LDFLAGS"]=" -Werror -rdynamic"
+S["CFLAGS"]="-g -O2  -Wpragmas -Wunknown-pragmas -Wall -Wextra -Wunsuffixed-float-constants -Wjump-misses-init -Wno-attributes -Waddress -Wvarargs -Warray-bounds"\
+" -Wbad-function-cast -Wchar-subscripts -Wcomment -Wfloat-equal -Wformat-security -Wformat=2 -Wformat-y2k -Wlogical-op -Wmaybe-uninitialized -Wmissin"\
+"g-field-initializers -Wmissing-noreturn -Wmissing-prototypes -Wnested-externs -Wnormalized=id -Woverride-init -Wpointer-arith -Wpointer-sign -Wredun"\
+"dant-decls -Wshadow -Wsign-compare -Wstrict-overflow=1 -Wswitch-enum -Wtrampolines -Wundef -Wunsafe-loop-optimizations -funsafe-loop-optimizations -"\
+"Wclobbered -Wunused -Wunused-result -Wunused-variable -Wunused-parameter -Wunused-local-typedefs -Wwrite-strings -fwrapv -pipe -fPIE -pie -Wsizeof-p"\
+"ointer-memaccess -Wpacked -Werror"
 S["CC"]="cc"
 S["target_alias"]=""
 S["host_alias"]=""
@@ -1187,9 +1187,8 @@ D["VERSION"]=" \"1.0.18\""
 D["HAVE_DLFCN_H"]=" 1"
 D["LT_OBJDIR"]=" \".libs/\""
 D["DEBUG"]=" 0"
-D["VCS_SYSTEM"]=" \"none\""
-D["VCS_CHECKOUT"]=" 0"
-D["NDEBUG"]=" 1"
+D["VCS_SYSTEM"]=" \"git\""
+D["VCS_CHECKOUT"]=" 1"
 D["HOST_VENDOR"]=" \"unknown\""
 D["HOST_OS"]=" \"linux-gnu\""
 D["HOST_CPU"]=" \"x86_64\""
@@ -1297,11 +1296,11 @@ D["HAVE_MSG_DONTWAIT"]=" 1"
 D["HAVE_MSG_MORE"]=" 1"
 D["HAVE_UUID_UUID_H"]=" 1"
 D["HAVE_UUID_GENERATE_TIME_SAFE"]=" 1"
+D["HAVE_LIBSASL"]=" 1"
 D["HAVE_PTHREAD_PRIO_INHERIT"]=" 1"
 D["HAVE_PTHREAD"]=" 1"
 D["HAVE_PTHREAD_TIMEDJOIN_NP"]=" 1"
 D["HAVE_GCC_ATOMIC_BUILTINS"]=" 1"
-D["NDEBUG"]=" 1"
 D["HAVE_VISIBILITY"]=" 1"
   for (key in D) D_is_set[key] = 1
   FS = ""
