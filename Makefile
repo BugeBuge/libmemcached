@@ -2889,7 +2889,7 @@ AR = ar
 AUTOCONF = ${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing autoconf
 AUTOHEADER = ${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing autoheader
 AUTOHEADER_FILE = mem_config.h
-AUTOMAKE = ${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing automake-1.13
+AUTOMAKE = ${SHELL} /home/alexandre-bugeia/Documents/libmemcached/build-aux/missing automake
 AWK = mawk
 CC = cc
 CCDEPMODE = depmode=gcc3
